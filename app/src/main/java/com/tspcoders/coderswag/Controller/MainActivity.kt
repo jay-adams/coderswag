@@ -1,7 +1,8 @@
-package com.tspcoders.coderswag
+package com.tspcoders.coderswag.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tspcoders.coderswag.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,4 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+
 }
