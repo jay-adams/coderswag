@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.tspcoders.coderswag.Model.Category
 import com.tspcoders.coderswag.R
-import kotlin.coroutines.coroutineContext
 
 class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
 
