@@ -10,23 +10,19 @@ import android.widget.TextView
 import com.tspcoders.coderswag.Model.Category
 import com.tspcoders.coderswag.R
 
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
-
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter(){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryView: View
         val holder : ViewHolder
 
-        if (convertView == null){
+        if (convertView == null) {
             categoryView = LayoutInflater.from(context).inflate(R.layout.category_list_item, null)
             holder = ViewHolder()
             holder.categoryImage = categoryView.findViewById(R.id.categoryImage)
             holder.categoryName = categoryView.findViewById(R.id.categoryName)
             categoryView.tag = holder
-
-        }else{
+        } else {
             holder = convertView.tag as ViewHolder
             categoryView = convertView
         }
@@ -54,5 +50,4 @@ class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapte
         var categoryImage: ImageView? = null
         var categoryName: TextView? = null
     }
-
 }
